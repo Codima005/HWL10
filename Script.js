@@ -1,15 +1,12 @@
-function main (a = 2,b = 3,c) { 
-    if(c){
-        return a + b + c;
-    }
-    else{
-        return sum();
-    }
+debugger;
 
+function main (c) { 
+    return typeof c === 'function' ? c() : result;
+    
   
 }
 
-function sum (a=2, b=3) { 
+function sum (a = 2, b = 3) { 
     return a + b;     
 };
 
@@ -19,8 +16,8 @@ function chtoto (g = 8){
     return sum() * g;
 }
 
-let result = main(2,3,chtoto());
+let result = sum();
 
 // let result = main();
 
-console.log(result)
+console.log(main(chtoto));
